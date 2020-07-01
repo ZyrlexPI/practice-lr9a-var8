@@ -41,7 +41,7 @@ void mod_m(int** m, int n)
     min = k[0];
     inmin = 0;
     for (i = 1;i < n;i++) {//Search for the smallest number of positive elements in a column
-        if (k[i] < max) {
+        if (k[i] < min) {
             min = k[i];
             inmin = i;
         }
